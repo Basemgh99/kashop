@@ -4,8 +4,7 @@ import React from "react";
 import axiosInstance from "../api/axiosinstance";
 function useCategories() {
   const getCategories = async () => {
-    const response = await axiosInstance.get(`/Categories`,);
-
+    const response = await axiosInstance.get("/Categories");
     return response.data;
   };
 
